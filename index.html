@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOHEL RANA - Software Quality Assurance Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  //
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #F5F5F5;
+      /* Soft Light Gray - Professional & Clean */
+      --text-color: #111111;
+      /* Soft Black for high readability */
+      --accent-color: #dafe00;
+      /* Electric Lime Accent */
+      --spacing-unit: 8px;
+      --container-padding: 40px;
+      --font-main: 'Inter', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      /* Dark dots on light background for texture */
+      background-image: radial-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+      background-size: 40px 40px;
+      background-attachment: fixed;
+      color: var(--text-color);
+      font-family: var(--font-main);
+      overflow-x: hidden;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--bg-color);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+    }
+
+    /* Utility */
+    .container {
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 0 var(--container-padding);
+    }
+
+    /* Hero Footer Responsive Grid */
+    .hero-footer-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 20px;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      padding-top: 40px;
+      margin-top: 40px;
+      align-items: start;
+    }
+
+    .hero-footer-left {
+      grid-column: span 6;
+      padding-right: 40px;
+    }
+
+    .hero-footer-mid {
+      grid-column: span 3;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 500;
+    }
+
+    .hero-footer-right {
+      grid-column: span 3;
+      text-align: right;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 500;
+    }
+
+    /* Nav Links Responsive */
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    @media (max-width: 768px) {
+      :root {
+        --container-padding: 20px;
+      }
+
+      /* Hero Footer Mobile Layout */
+      .hero-footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+
+      .hero-footer-left {
+        grid-column: span 2;
+        /* Full width on mobile */
+        padding-right: 0;
+        margin-bottom: 10px;
+      }
+
+      .hero-footer-mid {
+        grid-column: span 1;
+      }
+
+      .hero-footer-right {
+        grid-column: span 1;
+      }
+
+      /* Tighter nav on mobile */
+      .nav-links {
+        gap: 20px;
+      }
+    }
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
